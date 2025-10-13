@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Writer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>Email Writer</h1>
+      <button id="toggleMode">🌙 Dark Mode</button>
+    </div>
+
+    <div class="content">
+      <!-- Left column -->
+      <div class="input-box">
+        <label for="emailContent">Paste your email:</label>
+        <textarea id="emailContent" placeholder="Enter email content here..."></textarea>
+
+        <label for="tone">Select Tone:</label>
+        <select id="tone">
+          <option value="">-- Choose Tone --</option>
+          <option value="Formal">Formal</option>
+          <option value="Casual">Casual</option>
+          <option value="Friendly">Friendly</option>
+          <option value="Professional">Professional</option>
+        </select>
+
+        <button id="generateBtn">Generate Reply</button>
+      </div>
+
+      <!-- Right column -->
+      <div class="output-box" id="resultBox">
+        <h2>Generated Reply</h2>
+        <p id="replyText">Your generated reply will appear here.</p>
+        <button id="copyBtn">Copy Reply</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
